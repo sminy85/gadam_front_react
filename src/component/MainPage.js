@@ -281,27 +281,13 @@ function NewComponent () {
   )
 }
 
-function Home () {
-  return (
-    <div class='center_body'>
-      <NewComponent />
-      <hr />
-    </div>
-  )
-}
-
 function MainPage () {
   return (
     <div class='mainpage'>
-      <div class="main">
-        <div class="main_control_btn">
-          <NavLink exact to="/" href="/">HOME</NavLink>
-          <NavLink to="/findcrew">FIND CREW</NavLink>
+      <div class='main'>
+        <div class='center_body'>
+          <NewComponent />
         </div>
-        <Switch>
-          <Route exact path="/"><Home></Home></Route>
-          <Route path="/">Not found</Route>
-        </Switch>
       </div>
     </div>
   )

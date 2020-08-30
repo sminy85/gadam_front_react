@@ -1,0 +1,43 @@
+/*crew아이콘 페이지 시작*/
+.crewicon{
+  background:white;
+  text-align: center;
+  display:flex;
+  flex-wrap:nowrap;
+  margin-top:10px;
+  padding-bottom:20px;
+}
+
+
+.fa-running,.fa-futbol,.fa-hiking,.fa-biking,.fa-table-tennis,.fa-basketball-ball,.fa-bowling-ball,.fa-plus, .fa-golf-ball{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100px;
+  height:100px;
+  border:3px solid var(--nav-color);
+  color:black;
+  border-radius:10px;
+  font-size:70px;
+  margin:30px;
+  margin-bottom:7px;
+  padding-top: 14px;
+
+}
+
+.sportsname{
+  font-size:17px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: black;
+}
+
+.crewicon_table {
+  margin: auto;
+}
+
+.crewicon_table td, th a{
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+}

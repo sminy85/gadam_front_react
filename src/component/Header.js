@@ -7,7 +7,7 @@ function Header () {
       <nav class='navbar'>
         <div class='navbar_logo'>
           <a href="/">
-            <FontAwesome icon="coffee" size="lg" />
+            <FontAwesome icon='faCoffee' size='2x' />
             ADAM GADAM
           </a>
         </div>
