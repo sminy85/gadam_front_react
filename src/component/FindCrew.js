@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink, Switch, Route, useParams } from 'react-router-dom'
-import FontAwesome from 'react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../css/findcrew.css'
 import '../css/base.css'
 // import the library
@@ -16,7 +16,6 @@ import {
   faPlus,
   faBowlingBall
 } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 library.add(
   faBasketballBall,

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { NavLink, Switch, Route, useParams } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
 import '../css/base.css'
 import Modal from './Modal'
+// {/*import { NavLink, Switch, Route, useParams } from 'react-router-dom'*/}
 
 function NewComponent () {
   const [show, setShow] = useState(false)
@@ -39,12 +39,12 @@ function NewComponent () {
             <span>오늘의 크루</span>
             <span className="filter_btn" id="filter_btn">
               <button
-                class="toggle-button"
-                id="centered-toggle-button"
+                class='toggle-button'
+                id='centered-toggle-button'
                 onClick={function (e) {
                   e.preventDefault()
                   setShow(!show)
-                }} >
+                }}>
                 <FontAwesome name='filter' size='2x' />
               </button>
             </span>

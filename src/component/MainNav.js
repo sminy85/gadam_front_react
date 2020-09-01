@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/base.css'
 
-function Header () {
+function MainNav () {
   return (
     <div class='mainpage'>
       <div class="main">
@@ -16,4 +16,4 @@ function Header () {
   )
 }
 
-export default Header
+export default MainNav
