@@ -27,8 +27,10 @@ function NewComponent3 () {
           <input type="submit" Value="LOG IN" />
         </div>
         <div className="loginfo_bottom">
-          <input classname="remember_id" type="checkbox"/>                 
-          <p>아이디 저장</p>
+          <div className='storedId'>
+            <input classname="remember_id" type="checkbox"/>
+            <p>아이디 저장</p>
+          </div>
           <a href="findidpw.html">아이디/비밀번호 찾기</a>
         </div>
         <br />

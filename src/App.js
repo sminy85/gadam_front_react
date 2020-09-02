@@ -4,7 +4,8 @@ import Header from './component/Header'
 import Footer from './component/Footer'
 import MainPage from './component/MainPage'
 import FindCrew from './component/FindCrew'
-import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom'
+import MakeCrew from './component/MakeCrew'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 function App () {
   return (
@@ -14,8 +15,8 @@ function App () {
         <Switch>
           <Route exact path='/'><MainPage /></Route>
           <Route path='/findcrew'><FindCrew /></Route>
+          <Route path='/makecrew'><MakeCrew /></Route>
         </Switch>
-
         <Footer />
       </div>
     </BrowserRouter>

@@ -277,10 +277,10 @@ function NewComponent () {
           </div>
         </div>
         <div className="stickybutton" style={{zIndex: 2}}>
-          <a href='/'>
+          <NavLink to='/makecrew'>
             <p><b>크루모집</b></p>
             <span className="mainjoin" href='/'>나만의 크루를 모집해보세요!</span>
-          </a>
+          </NavLink>
         </div>
         <div className="main-paging">
           <div className="todayscrew-paging">
