@@ -1,5 +1,6 @@
 import React from 'react'
 import FontAwesome from 'react-fontawesome'
+import '../css/style.css'
 // import the library
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -26,8 +27,8 @@ function Header () {
           </a>
         </div>
         <ul class='navbar_mypage'>
-          <NavLink to='/login'>LOGIN/JOIN</NavLink>
-          <NavLink to='/mypage'><FontAwesome name='user' size='2x' /></NavLink>
+          <li><NavLink to='/login'>LOGIN/JOIN</NavLink></li>
+          <li><NavLink to='/mypage'><FontAwesome name='user' size='2x' /></NavLink></li>
         </ul>
       </nav>
       <Switch>

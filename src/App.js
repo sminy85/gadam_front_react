@@ -11,10 +11,6 @@ function App () {
     <BrowserRouter>
       <div className='App'>
         <Header />
-        <div class='main_control_btn'>
-          <NavLink className='main_control' exact to='/'>HOME</NavLink>
-          <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
-        </div>
         <Switch>
           <Route exact path='/'><MainPage /></Route>
           <Route path='/findcrew'><FindCrew /></Route>

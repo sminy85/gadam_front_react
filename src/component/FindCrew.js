@@ -1,8 +1,6 @@
 import React from 'react'
-import { NavLink, Switch, Route, useParams } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../css/findcrew.css'
-import '../css/base.css'
 // import the library
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -16,6 +14,7 @@ import {
   faPlus,
   faBowlingBall
 } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
 
 library.add(
   faBasketballBall,
@@ -32,8 +31,14 @@ library.add(
 
 function FindCrew () {
   return (
-    <div class='center_body'>
-      <NewComponent2 />
+    <div>
+      <div class='main_control_btn'>
+        <NavLink className='main_control' exact to='/'>HOME</NavLink>
+        <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
+      </div>
+      <div class='center_body3'>
+        <NewComponent2 />
+      </div>
     </div>
   )
 }

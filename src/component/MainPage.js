@@ -4,6 +4,23 @@ import '../css/style.css'
 import '../css/base.css'
 import Modal from './Modal'
 // {/*import { NavLink, Switch, Route, useParams } from 'react-router-dom'*/}
+import { NavLink } from 'react-router-dom'
+
+function MainPage () {
+  return (
+    <div class='mainpage'>
+      <div class='main_control_btn'>
+        <NavLink className='main_control' exact to='/'>HOME</NavLink>
+        <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
+      </div>
+      <div class='main'>
+        <div class='center_body2'>
+          <NewComponent />
+        </div>
+      </div>
+    </div>
+  )
+}
 
 function NewComponent () {
   const [show, setShow] = useState(false)
@@ -275,18 +292,6 @@ function NewComponent () {
             <a href='/'>5</a>
             <a className='next' href='/'>&gt;</a>
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function MainPage () {
-  return (
-    <div class='mainpage'>
-      <div class='main'>
-        <div class='center_body'>
-          <NewComponent />
         </div>
       </div>
     </div>
