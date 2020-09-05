@@ -1,0 +1,30 @@
+
+.title{
+
+  font-size:25px;
+  margin-top:70px;
+  margin-bottom:40px;
+}
+.done1{
+  margin-top:70px;
+}
+.done2{
+  margin-left:50%;
+border : 2px solid gray;
+  background:beige;
+border-radius:15px;
+  padding:6px 20px 6px 20px;
+  color:black
+   
+}
+
+
+.bottomarea {
+ 
+ margin-top:20px;
+}
+.center_body{
+  margin-top:20px;
+  height:590px;
+   padding-left:200px;
+}

@@ -89,10 +89,8 @@ list-style:none;
 
 
 .fa-running,.fa-futbol,.fa-hiking,.fa-biking,.fa-table-tennis,.fa-basketball-ball,.fa-bowling-ball,.fa-plus, .fa-golf-ball{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:200%;
+  margin: auto;
+  width:100%;
   height:100px;
   color:rgb(56, 56, 56);
   border-radius:10px;
@@ -112,6 +110,7 @@ list-style:none;
 
 .crewicon_table {
   margin: auto;
+  margin-top: 50px;
 }
 
 .crewicon_table td, th a{

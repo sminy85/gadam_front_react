@@ -1,0 +1,130 @@
+
+body{
+  margin:0;
+  font-family: 'Source Sans Pro'; 
+  
+  background-color: #F5F5F6;
+}
+.center_body {
+  padding:15px;
+  margin-top:20px;
+}
+
+.findcrew-title{
+  padding-top:40px;
+  font-size:25px;
+  padding-bottom:20px;
+  padding-left:30px;
+}
+
+
+.go-addsport{
+  background:#ffee58;
+  border-color: #ffee58;
+  position: absolute;
+  left: 1250px;
+  top: 600px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 40px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.addsports-top{
+  display:flex;
+  margin: auto;
+}
+
+
+.findcrew-title{
+  margin-right:10px;
+}
+
+.findcrew-q {
+  border-width: 2px;  
+  border-style: solid none;
+  border-color: #7fffd4;
+}
+
+.findcrew-q{
+  height:40px;
+  width:70%;
+  background: white;
+  margin:30px;
+  margin-bottom:40px;
+  margin-left:15%;
+  
+}
+.findcrew-q input{
+  border:none;
+  outline:none;
+  width:340px;
+  padding:10px;
+  float:left;
+  background:none;
+}
+.findcrew-q input:focus{
+  border:none;
+  outline:none;
+  width:340px;
+  padding:10px;
+  float:left;
+  background:white;
+}
+
+.findcrew-q input:-ms-input-placeholder{color:#a8a8a8;}
+  .findcrew-q input::-webkit-input-placeholder{color:#a8a8a8;}
+ .findcrew-q input::-moz-placeholder{color:#a8a8a8;}
+ 
+.findcrew_btn{
+  width:50px;
+  height:100%;
+  border:0px;
+  background-color: white;
+  color:var(--background-color);
+  outline:none;
+  float:right;
+}
+
+.crewicon{
+  height:100%;
+  text-align: center;
+  display:flex;
+  flex-wrap:nowrap;
+  margin-top:10px;
+}
+
+
+.sportsname-ect{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:130px;
+  height:70px;
+  color:var(--background-color);
+  border-radius:10px;
+  margin:30px;
+  margin-bottom:7px;
+  padding-top:0px;
+  font-size:25px;
+  border:2px solid #ffee58
+}
+
+.sportsname:hover {
+  background:#ffff8b;
+  color: black;
+ border:2px solid #ffee58;
+}
+
+.crewicon_table {
+  margin: auto;
+
+}
+
+.crewicon_table td, th a{
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+}

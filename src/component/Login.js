@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/login.css'
 import '../css/base.css'
+import { NavLink } from 'react-router-dom'
 
 function Login () {
   return (
@@ -31,12 +32,12 @@ function NewComponent3 () {
             <input classname="remember_id" type="checkbox"/>
             <p>아이디 저장</p>
           </div>
-          <a href="findidpw.html">아이디/비밀번호 찾기</a>
+          <li><NavLink to='/findidpw'>아이디/비밀번호 찾기</NavLink></li>
         </div>
         <br />
         <div className="gojoin">
           <p id="notyet">아직 가담가담 회원이 아니신가요?</p>
-          <a id="go_to_join" href="join.html">회원가입 바로가기</a>
+          <li><NavLink id='go_to_join' to='/join'>회원가입 바로가기</NavLink></li>
         </div>
       </form>
       <hr />

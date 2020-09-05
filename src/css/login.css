@@ -205,25 +205,22 @@ border: none;
 }
 .gojoin{
     display: flex;
-margin-top:30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;	margin-bottom:20px;
+    width:60%;
 }
 #notyet{
-font-size:15px;
-margin-right:10px;
+    font-size:15px;
+    margin-right:10px;
 }
 #go_to_join {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size:13px;
+    font-size:13px;
+    color: blue;
 }
 
 .snslogin_btn {
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-
-

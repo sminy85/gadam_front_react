@@ -1,0 +1,42 @@
+body {
+  font-family: 'Nanum Gothic','Source Sans Pro', sans-serif;
+
+}
+
+
+.want-title{
+  text-align: left;
+  margin: auto;
+margin-left:20%;
+  padding: 30px;
+  margin-top:80px;
+  font-size:30px;
+}
+
+.addsports{
+display:flex;
+margin-left:40%;
+  padding: 20px;
+  font-size:30px;
+}
+#addsports{
+  width:300px;
+  height:40px;
+  font-size:25px;
+}
+#addsportsbtn{
+height:42px;
+  border-radius:25px;
+  border:2px solid gray;
+  background-color:white;
+  margin-left:5px;
+   width:100px;
+}
+#addsportsbtn:hover{
+ background-color:gray;
+  color:white;
+}
+a {
+  font-style: none;
+}
+

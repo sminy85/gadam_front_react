@@ -103,7 +103,11 @@ function NewComponent2 () {
             </td>
             <td>
               <a href='/'>
-                <FontAwesomeIcon icon={['fa', 'plus']} size='2x' />
+                <li>
+                  <NavLink to='/addsport'  >
+                    <FontAwesomeIcon icon={['fa', 'plus']} size='2x' />
+                  </NavLink>
+                </li>
                 <i className="sportsname">기타</i>
               </a>
             </td>

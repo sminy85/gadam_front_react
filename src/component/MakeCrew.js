@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/makecrew.css'
+import { NavLink } from 'react-router-dom'
 
 function MakeCrew () {
   return (
@@ -64,8 +65,9 @@ function MakeCrew () {
             <input type="submit" value="개설완료">
         </form>
         */}
-                  <a href="mypage.html"><input type="button" id="donebtn" name="btn" defaultValue="개설완료" style={{float: 'right'}} /></a>
-                </td></tr>
+                  <NavLink id='donebtn' to='/mypage'>개설완료</NavLink>
+                </td>
+                </tr>
               </tbody>
             </table>
           </form>
