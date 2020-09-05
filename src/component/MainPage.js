@@ -5,6 +5,17 @@ import '../css/base.css'
 import Modal from './Modal'
 // {/*import { NavLink, Switch, Route, useParams } from 'react-router-dom'*/}
 import { NavLink } from 'react-router-dom'
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
+import slideImage1 from './images/blog-1.jpg'
+import slideImage2 from './images/blog-2.jpg'
+import slideImage3 from './images/blog-3.jpg'
+
+var slideImages = [
+  './images/blog-1.jpg',
+  './images/blog-2.jpg',
+  './images/blog-3.jpg'
+]
 
 function MainPage () {
   return (
@@ -32,25 +43,26 @@ function NewComponent () {
   return (
     <div>
       <div>
-        {/*hotcrew_image
-        <section className='slider'>
-          <div className='flexslider'>
-            <ul className='slides'>
-              <li>
-                <a href='/'>
-                  <img src='images/blog-1.jpg' width='10%' height='10%' />
-                </a>
-              </li>
-              <li>
-                <img src='images/blog-4.jpg' />
-              </li>
-              <li>
-                <img src='images/blog-6.jpg' />
-              </li>
-            </ul>
-          </div>
-        </section>
-        {/*todays_crew*/}
+        <div className="slide-container">
+          <Slide easing='ease'>
+            <div className="each-slide">
+              <img src={slideImage1} />
+              {/*<div style={{ backgroundImage: slideImages[0] }}>
+                <span>Slide 1</span>
+              </div>*/}
+            </div>
+            <div className="each-slide">
+              <img src={slideImage2} />
+            </div>
+            <div className="each-slide">
+              <img src={slideImage3} />
+              {/*<div style={{ backgroundImage: 'url(' + slideImages[0] + ')' }}>
+                <span>Slide 3</span>
+              </div>*/}
+            </div>
+          </Slide>
+        </div>
+
         <div className="todays-crew">
           <div className="todays-crew-nav">
             <span>오늘의 크루</span>

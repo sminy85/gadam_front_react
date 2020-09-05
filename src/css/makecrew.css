@@ -47,12 +47,12 @@ td, th {
 	width: 200px;
 }
 
-input[type=text] {
+.makecrew_input {
 	border : 2px solid skyblue;
 	border-radius : 5px;
 }
 
-input[type=text]:hover {
+.makecrew_input:hover {
 	background : aliceblue;
 	border : 2px solid skyblue;
 	border-radius : 5px;

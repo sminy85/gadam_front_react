@@ -24,7 +24,7 @@ function EctCrew () {
             <h1 className="findcrew-title">더 많은 크루를 찾고 계신가요? </h1>
           </div>
           <div className="findcrew-q">
-            <input type="text" palceholder="크루 검색" />
+            <input className='findcrew_input' type='text' palceholder="크루 검색" />
             <button className="findcrew_btn"><FontAwesomeIcon icon={['fa', 'search']} size='2x' /></button>
           </div>
           <div className="crewicon">

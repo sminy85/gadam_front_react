@@ -122,3 +122,7 @@ body{
   color: black;
  border:2px solid #ffee58;
 }
+
+.findcrew_input {
+  border: 1px solid white;
+}

@@ -15,7 +15,7 @@ function CrewSetting () {
               <tbody>
                 <tr>
                   <td>크루명</td>
-                  <td><input type="text" id="crewid" name="crewid" /></td>
+                  <td><input className='crewsetting_input' type='text' id='crewid' name="crewid" /></td>
                 </tr>
                 <tr>
                   <td>운동종목</td>
@@ -44,7 +44,7 @@ function CrewSetting () {
                 </tr>
                 <tr>
                   <td>장소</td>
-                  <td><input type="text" id="crewplace" name="crewplace" /></td>
+                  <td><input className='crewsetting_input' type='text' id='crewplace' name="crewplace" /></td>
                 </tr>
                 <tr>
                   <td>인원수</td>

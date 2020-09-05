@@ -12,7 +12,7 @@ function MakeCrew () {
             <table>
               <tbody>
                 <tr><td>크루명</td>
-                  <td><input type="text" id="crewid" name="crewid" /></td>
+                  <td><input className='makecrew_input' type='text' id="crewid" name="crewid" /></td>
                 </tr>
                 <tr><td>운동종목</td>
                   <td>
@@ -35,7 +35,7 @@ function MakeCrew () {
                 <tr><td>시간</td>
                   <td><input type="time" defaultValue="07:00:00" min="07:00:00" max="22:00:00" /></td></tr>
                 <tr><td>장소</td>
-                  <td><input type="text" id="crewplace" name="crewplace" /></td></tr>
+                  <td><input className='makecrew_input' type='text' id="crewplace" name="crewplace" /></td></tr>
                 <tr><td>인원수</td>
                   <td><input type="number" min={0} max={20} step={1} /><br /><br /></td></tr>
                 <tr><td>성별</td>
