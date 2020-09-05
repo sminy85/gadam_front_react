@@ -34,7 +34,7 @@ function FindCrew () {
     <div>
       <div class='main_control_btn'>
         <NavLink className='main_control' exact to='/'>HOME</NavLink>
-        <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
+        <NavLink className='main_control1' to='/findcrew'>FIND CREW</NavLink>
       </div>
       <div class='center_body3'>
         <NewComponent2 />
@@ -104,7 +104,7 @@ function NewComponent2 () {
             <td>
               <a href='/'>
                 <li>
-                  <NavLink to='/addsport'  >
+                  <NavLink to='/ectcrew'>
                     <FontAwesomeIcon icon={['fa', 'plus']} size='2x' />
                   </NavLink>
                 </li>

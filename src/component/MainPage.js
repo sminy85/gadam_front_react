@@ -10,7 +10,7 @@ function MainPage () {
   return (
     <div class='mainpage'>
       <div class='main_control_btn'>
-        <NavLink className='main_control' exact to='/'>HOME</NavLink>
+        <NavLink className='main_control1' exact to='/'>HOME</NavLink>
         <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
       </div>
       <div class='main'>

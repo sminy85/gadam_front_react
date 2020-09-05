@@ -66,6 +66,7 @@
   .navbar_mypage a{
     color: var(--text-color);
     }
+    
   .navbar_mypage li{
     padding: 8px 12px;
     border: 2px solid gray;

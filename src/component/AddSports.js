@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 function AddSports () {
   return (
-    <div className="center_body">
+    <div className='center_bodyAS'>
       <p className="want-title"><b>크루 종목 추가하기</b></p>
       <form className="addsports" action method>
         <div>

@@ -90,7 +90,7 @@ list-style:none;
 
 .navbar_mypage li:hover{
   border: 2px solid var(--accent-color);
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .main {
@@ -108,33 +108,25 @@ list-style:none;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top:12px;
   width: 60%;
   height: 1400px;
   border: 5px solid var(--nav-color);
   margin-bottom:10px;
 }
 
-.main_control {
+.main_control1 {
     color: black;
     size: 30px;
+    margin-right:12px;
     padding: 8px 12px;
-}
-/*클릭후에도 색상 유지하려면 javascript사용해야함
-.main a:hover{
-    background-color: rgba(127, 255, 212, 0.377);
+    background-color: var(--nav-color);
 }
 
-.main a:active{
-    background-color: rgba(127, 255, 212, 0.377);
-}
-
-.main a:visited{
-    background-color: rgba(127, 255, 212, 0.377);
-}
-*/
-.selected {
-  background-color: var(--nav-color);
+.main_control {
+  color: black;
+  size: 30px;
+  margin-right:12px;
+  padding: 8px 12px;
 }
 
 .slider {

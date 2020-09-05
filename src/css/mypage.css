@@ -2,7 +2,7 @@
 .mypage {
     background-color: white;
     margin: auto;
-    width: 50%;
+    width: 60%;
   }
 
   .title-m {
@@ -14,8 +14,8 @@
     display: flex;
     position: relative;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
     width: 100%;
   }
   

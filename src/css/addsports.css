@@ -1,42 +1,49 @@
 body {
   font-family: 'Nanum Gothic','Source Sans Pro', sans-serif;
-
 }
-
 
 .want-title{
   text-align: left;
-  margin: auto;
-margin-left:20%;
+  margin-left:20%;
   padding: 30px;
-  margin-top:80px;
   font-size:30px;
 }
 
 .addsports{
-display:flex;
-margin-left:40%;
+  display: flex;
   padding: 20px;
-  font-size:30px;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
 }
+
 #addsports{
-  width:300px;
   height:40px;
   font-size:25px;
 }
+
 #addsportsbtn{
-height:42px;
+  height:42px;
   border-radius:25px;
   border:2px solid gray;
   background-color:white;
   margin-left:5px;
-   width:100px;
+  width:100px;
 }
 #addsportsbtn:hover{
  background-color:gray;
   color:white;
 }
+
 a {
   font-style: none;
 }
 
+
+.center_bodyAS {
+  background-color:white;
+  margin: auto;
+  margin-top: 0;
+  width: 60%;
+  height: 900px;
+}

@@ -1,13 +1,17 @@
-
 body{
   margin:0;
   font-family: 'Source Sans Pro'; 
-  
   background-color: #F5F5F6;
 }
-.center_body {
-  padding:15px;
-  margin-top:20px;
+.center_body6 {
+  background-color:white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  width: 60%;
+  height: 900px;
+  margin-bottom:10px;
 }
 
 .findcrew-title{
@@ -22,15 +26,15 @@ body{
   background:#ffee58;
   border-color: #ffee58;
   position: absolute;
-  left: 1250px;
-  top: 600px;
+  left: 65%;
+  top: 68%;
   width: 60px;
   height: 60px;
   border-radius: 30px;
   font-size: 40px;
-   display:flex;
-   align-items: center;
-   justify-content: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .addsports-top{
@@ -95,6 +99,7 @@ body{
   display:flex;
   flex-wrap:nowrap;
   margin-top:10px;
+  margin: auto;
 }
 
 
@@ -106,25 +111,14 @@ body{
   height:70px;
   color:var(--background-color);
   border-radius:10px;
-  margin:30px;
   margin-bottom:7px;
   padding-top:0px;
   font-size:25px;
-  border:2px solid #ffee58
+  border:2px solid #ffee58;
 }
 
-.sportsname:hover {
+.sportsname-ect:hover {
   background:#ffff8b;
   color: black;
  border:2px solid #ffee58;
-}
-
-.crewicon_table {
-  margin: auto;
-
-}
-
-.crewicon_table td, th a{
-  text-align: center;
-  font-family: 'Do Hyeon', sans-serif;
 }
