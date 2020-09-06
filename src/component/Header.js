@@ -22,8 +22,7 @@ function Header () {
       <nav class='navbar'>
         <div class='navbar_logo'>
           <a href='/'>
-            <FontAwesomeIcon icon={['fa', 'child']} size='2x' />
-            ADAM GADAM
+            <strong className='logo'>//</strong> GADAMGADAM
           </a>
         </div>
         <ul class='navbar_mypage'>

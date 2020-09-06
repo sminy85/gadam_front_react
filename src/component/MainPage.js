@@ -46,16 +46,16 @@ function NewComponent () {
         <div className="slide-container">
           <Slide easing='ease'>
             <div className="each-slide">
-              <img src={slideImage1} />
+              <img className='slide_img' src={slideImage1} />
               {/*<div style={{ backgroundImage: slideImages[0] }}>
                 <span>Slide 1</span>
               </div>*/}
             </div>
             <div className="each-slide">
-              <img src={slideImage2} />
+              <img className='slide_img' src={slideImage2} />
             </div>
             <div className="each-slide">
-              <img src={slideImage3} />
+              <img className='slide_img' src={slideImage3} />
               {/*<div style={{ backgroundImage: 'url(' + slideImages[0] + ')' }}>
                 <span>Slide 3</span>
               </div>*/}
