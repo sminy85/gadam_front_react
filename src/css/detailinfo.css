@@ -1,10 +1,10 @@
 
 .detailinfo {
   background-color: white;
-  width: 50%;
+  width: 60%;
   margin: auto;
   margin-top:20px;
-  padding-top:20px;
+ 
   margin-bottom:10px;
 }
 
@@ -52,8 +52,30 @@ span {
    margin-top: 10px;
   margin-left:550px;
 }
+.crew-box{
+  border-bottom:2px solid gray ;
+}
+.date-detail{
+  border-bottom:2px solid gray ;
+  padding-bottom:20px;
+}
+.start-end-time{
+  border-bottom:2px solid gray ;
+  padding-bottom:20px;
+}
+.place-detail{
+  border-bottom:2px solid gray ;
+  padding-bottom:20px;
+}
+.detail-detail{
+  border-bottom:2px solid gray ;
+  padding-bottom:20px;
+}
+.crewking-detail{
+  border-bottom:2px solid gray ;
+  padding-bottom:20px;
+}
 #joiny{
-
    border: 3px solid var(--nav-color);
   border-radius:20px;
   padding:5px;
@@ -83,10 +105,27 @@ input[type='radio']:checked {
 .like > input {
   display: none;
 }
-.content {
-padding-left:10px;
+.detail{
+  display: flex; 
+  align-items: left;
+  padding-left:100px;
+  font-size:23px;
 }
-
+.content {
+  display: flex; 
+  align-items: left;
+  padding-left:200px;
+  font-size:18px;
+}
+.content2 {
+  display: flex; 
+  align-items: left;
+  font-size:18px;
+  border:2px solid var(--nav-color);
+  margin-left:50px;
+  width:100%;
+  padding:15px;
+}
 .crew_captin {
   display: flex; 
   padding: 10px;
@@ -106,7 +145,17 @@ padding-left:10px;
   border-radius: 10px;
 }
 .contact_btn:hover{
-   border: 3px solid gray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  background-color:var(--nav-color);
+  margin-top:10px;
+  color: black;
+  padding: 10px;
+  opacity: 0.8;
+  border-radius: 10px;
+  border: 3px solid gray;
 }
 .id{
   margin-bottom:10px;
@@ -182,4 +231,29 @@ padding-left:10px;
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .contact_btn:hover {
   opacity: 1;
+}
+
+
+.slide_crewimg{
+  margin-bottom: 50px;
+}
+
+.each-slide{
+  height:500px;
+}
+
+.slide_img  {
+  width: 100%;
+  object-fit: contain;
+}
+
+.slider {
+  margin: 10px auto;
+  width: 800px;
+  height: 600px;
+}
+
+.slides img {
+  width: 800px;
+  height: 400px;
 }

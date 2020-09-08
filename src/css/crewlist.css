@@ -1,0 +1,373 @@
+:root { 
+    /* color */
+  --text-color: white; 
+  --background-color: gray; 
+  --accent-color: aquamarine; 
+  
+      /* size */
+  
+      /* fontsize */
+  } 
+  
+  
+  *{
+    padding:0;
+    margin:0;
+      box-sizing: border-box;
+  }
+  
+  html,body{
+      margin:0;
+      height:100%;
+      font-family: 'Source Sans Pro'; 
+      background-color: rgb(245, 244, 244);
+  }
+  
+  
+  
+  a{
+    text-decoration: none;
+  }
+  
+  ul, li{
+  list-style:none;
+  }
+  
+  
+  
+  .crewlist2{
+    padding-right: 5%;
+    padding-left: 5%;
+  
+  }
+  
+  .navbar{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      padding: 20px;
+      margin-bottom: 20px; 
+  }
+  
+  .navbar_logo{
+      font-size: 24px;
+      color: var(--text-color);
+      margin-bottom: 10px; 
+      margin-top:10px;
+  }
+  
+  .navbar_logo a{
+      color: var(--text-color);
+  
+  }
+  .navbar_logo i{
+      color: var(--accent-color);
+  }
+  
+  .navbar_mypage{
+      list-style: none;
+      color: var(--text-color);
+      display: flex;
+      padding-left: 0;   
+      margin-bottom: 5px; 
+      margin-top:5px;
+  }
+  
+  .navbar_mypage a{
+      color: var(--text-color);
+    }
+  .navbar_mypage li{
+      padding: 8px 12px;
+    border: 2px solid gray;
+  
+  }
+  
+  .navbar_mypage li:hover{
+    border: 2px solid var(--accent-color);
+      border-radius: 4px;
+  }
+  
+  .findcrew-title{
+  padding-top:50px;
+    font-size:25px;
+    padding-bottom:20px;
+  display: flex;
+  align-items: left;
+  }
+  .findcrew-q{
+  height:40px;
+    width:500px;
+    border:1px solid var(--background-color);
+    background:white;
+    margin:30px;
+    margin-bottom:40px;
+  }
+  .findcrew-q input{
+    border:none;
+    outline:none;
+    width:340px;
+    padding:10px;
+    float:left;
+    background:white;
+  }
+  .findcrew-q input:focus{
+    border:none;
+    outline:none;
+    width:340px;
+    padding:10px;
+    float:left;
+    background:white;
+  }
+  
+  .findcrew-q input:-ms-input-placeholder{color:#a8a8a8;}
+  .findcrew-q input::-webkit-input-placeholder{color:#a8a8a8;}
+   .findcrew-q input::-moz-placeholder{color:#a8a8a8;}
+  
+  
+  .findcrew_btn{
+    width:50px;
+    height:100%;
+    border:0px;
+    background:var(--background-color);
+    outline:none;
+    float:right;
+    color:white;
+  
+  }
+  .date_q{
+       display:flex; 
+    margin: auto;
+    flex-direction:row;
+    padding-bottom:20px;
+    border-bottom:1px solid gray ;
+  }
+  .date-q{
+    font-size:18px;
+    padding-right:8px;
+  }
+  
+  
+  /* 
+  .time-filter-btn {
+    display: flex;
+    overflow-y:hidden;
+    overflow-x:auto;
+     white-space:nowrap;
+    padding-bottom:3px;
+    padding-top:7px;
+    margin-bottom:3px;
+  }
+  .time-filter-btn li{
+    list-style: none;
+    padding-right: 10px;
+     margin-bottom:5px;
+    margin-top:5px;
+    font-size: 18px;
+    display:inline-block; 
+    
+  }
+  .time-filter-btn a{
+    background-color: white(128, 128, 128, 0.596);
+    color: black;
+    padding: 3px 8px;
+     border-radius: 25px;
+      border:2px solid rgba(128, 128, 128, 0.596);
+       margin-top:5px;
+  }
+  .time-filter-btn a:hover{
+    list-style: none;
+    background-color: rgba(127, 255, 212, 0.404);
+  border-radius: 25px;
+  }
+  .time-filter-btn ul{
+    white-space:nowrap;
+    overflow-x:auto;
+    text-align:center;
+  }
+  .time-filter-btn::-webkit-scrollbar{
+    width:8px;
+  }
+  .time-filter-btn::-webkit-scrollbar-thumb{
+    background-color:gray;
+    border-radius:10px;
+    background-clip:padding-box;
+    border:3px solid transparent;
+  } */
+  
+  .region-filter-btn {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+  
+  .region-filter-btn li{
+    list-style: none;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  
+  .region-filter-btn a{
+    background-color: white(128, 128, 128, 0.596);
+    color: black;
+    padding: 3px 8px;
+     border-radius: 25px;
+      border:2px solid rgba(128, 128, 128, 0.596);
+  }
+  
+  .region-filter-btn a:hover{
+    list-style: none;
+    color: var(--text-color);
+    background-color: rgba(128, 128, 128, 0.596);
+    border-radius: 25px;
+  }
+  
+  
+  .todays-crew-info{
+    display:flex;
+    padding:3px 3px 3px 3px;
+    margin-top:10px;
+    border-bottom:1px solid gray ;
+  }
+  
+  .todays-crew-info .time{
+    flex:1 1 20% ; 
+  }
+  .todays-crew-info .info{
+    flex:1 1 65% ; 
+  }
+  
+  .todays-crew-info .joinbtn{
+    flex:1 1 15% ; 
+  }
+  .todays-crew-info .joinfastbtn{
+    flex:1 1 15% ; 
+  }
+  .todays-crew-info .joindonebtn{
+    flex:1 1 15% ; 
+  }
+  .hashtags{
+    display:flex;
+    font-size: 10px;
+    color:blue;
+  }
+  
+  .hashtags li{
+    margin-right:12px;
+  }
+  
+  .joinbtn{
+    font-size:17px;
+    background-color:skyblue;
+    color:white;
+    padding:2px;
+   border-radius:80px;
+    border:2px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .joinbtn:hover{
+  border:2px solid black;
+  }
+  
+  .joindonebtn{
+    font-size:17px;
+    background-color:rgba(54, 53, 53, 0.623);
+    color:white;
+    padding:2px;
+    border-radius:80px;
+  display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid white;
+  }
+  .joindonebtn:hover{
+  border:2px solid black;
+  }
+  
+  .joinfastbtn{
+    font-size:17px;
+  
+    background-color:red;
+    color:white;
+    padding:2px;
+   border-radius:80px;
+       border:2px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .joinfastbtn:hover{
+  border:2px solid black;
+  }
+  
+  .main-paging{
+    text-align:center;
+    font-size:0;
+    margin-top:25px;
+  }
+  .todayscrew-paging{
+    display:inline-block;
+  }
+  .todayscrew-paging.none{
+    display:none;
+  }
+  .todayscrew-paging a{
+    display:block;
+      margin:0 3px;
+      float:left;
+      border:1px solid #e6e6e6;
+      width:28px;
+      height:28px;
+      line-height:28px;
+      text-align:center;
+      background-color:#fff;
+      font-size:13px;
+      color:#999999;
+      text-decoration:none;
+  }
+  /* .todayscrew-paging a:hover{
+      border:2px solid #999;
+  }
+  .todayscrew-paging .checknum {
+  background-color:#999;
+      color:#fff;
+      border:1px solid #999;
+  }
+  .todayscrew-paging .checknum:hover{
+    text-decoration:none;
+  } */
+  
+  .filter_title{
+  font-size:20px
+  }
+  
+  /* .time-filter{
+    max-width:960px;
+    width:100%;
+    margin:0 auto;
+  } */
+  
+  
+  .crewlist_body {
+   background-color:white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  padding-bottom:130px;
+  
+  }
+  
+  .bottomarea {
+     display: flex;
+      justify-content:space-between;
+      align-items: center;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      padding: 8px 12px;
+      padding-left: 90%;
+       margin-top: 20px; 
+  }

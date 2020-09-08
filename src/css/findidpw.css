@@ -1,18 +1,17 @@
-.bottomarea {
- 
- margin-top:20px;
+.center_body_fip{
+  height:1000px;
+  margin: auto;
+  width: 60%;
+  background-color: white;
+  height:800px;
+  padding-top:30px;
+  margin-bottom:10px;
 }
-.center_body{
-  margin-top:20px;
-  height:590px;
-}
-.title{
-  padding-right: 25%;
-  padding-left: 25%;
+.title_fip{
+  margin: auto;
   font-size:25px;
-  margin-top:70px;
+  padding: 50px;
 }
-
 
 .findbtn{
 margin-top:40px;

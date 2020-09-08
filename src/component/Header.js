@@ -6,7 +6,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faChild
 } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Route, NavLink, Switch } from 'react-router-dom'
 import Login from './Login'
 import MyPage from './MyPage'

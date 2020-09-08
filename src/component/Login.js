@@ -7,7 +7,6 @@ function Login () {
   return (
     <div className='login_body'>
       <NewComponent3 />
-      <hr />
     </div>
   )
 }
@@ -35,7 +34,7 @@ function NewComponent3 () {
           <li><NavLink to='/findidpw'>아이디/비밀번호 찾기</NavLink></li>
         </div>
         <br />
-        <div className="gojoin">
+        <div className='gojoin-gadam'>
           <p id="notyet">아직 가담가담 회원이 아니신가요?</p>
           <li><NavLink id='go_to_join' to='/join'>회원가입 바로가기</NavLink></li>
         </div>

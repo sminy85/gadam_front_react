@@ -15,7 +15,7 @@ body{
 }
 
 .findcrew-title{
-  padding-top:40px;
+  padding-top:50px;
   font-size:25px;
   padding-bottom:20px;
   padding-left:30px;
@@ -26,15 +26,16 @@ body{
   background:#ffee58;
   border-color: #ffee58;
   position: absolute;
-  left: 65%;
+  left: 70%;
   top: 68%;
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  font-size: 40px;
+  font-size: 50px;
   display:flex;
   align-items: center;
   justify-content: center;
+  padding-bottom:10px;
 }
 
 .addsports-top{
@@ -47,43 +48,43 @@ body{
   margin-right:10px;
 }
 
-.findcrew-q {
+.findcrew-m {
   border-width: 2px;  
   border-style: solid none;
   border-color: #7fffd4;
 }
 
-.findcrew-q{
+.findcrew-m{
   height:40px;
   width:70%;
   background: white;
-  margin:30px;
-  margin-bottom:40px;
+  margin-top:30px;
   margin-left:15%;
   
 }
-.findcrew-q input{
-  border:none;
-  outline:none;
-  width:340px;
+.findcrew-m input{
+  border:0;
+  outline:0;
+  width:90%;
   padding:10px;
-  float:left;
+  float:center;
   background:none;
 }
-.findcrew-q input:focus{
-  border:none;
-  outline:none;
+.findcrew-m input:focus{
+  border:0;
+  outline:0;
   width:340px;
   padding:10px;
   float:left;
   background:white;
 }
 
-.findcrew-q input:-ms-input-placeholder{color:#a8a8a8;}
-  .findcrew-q input::-webkit-input-placeholder{color:#a8a8a8;}
- .findcrew-q input::-moz-placeholder{color:#a8a8a8;}
+
+.findcrew-m input:-ms-input-placeholder{color:#a8a8a8;}
+  .findcrew-m input::-webkit-input-placeholder{color:#a8a8a8;}
+ .findcrew-m input::-moz-placeholder{color:#a8a8a8;}
  
-.findcrew_btn{
+.findcrew_btn_m{
   width:50px;
   height:100%;
   border:0px;
@@ -112,7 +113,6 @@ body{
   color:var(--background-color);
   border-radius:10px;
   margin-bottom:7px;
-  padding-top:0px;
   font-size:25px;
   border:2px solid #ffee58;
 }

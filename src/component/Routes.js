@@ -18,6 +18,7 @@ import Message from './Message'
 import ChatRoom from './ChatRoom'
 import WriteReview from './WriteReview'
 import CrewSetting from './CrewSetting'
+import CrewList from './CrewList'
 
 export default () => (
   <Router>
@@ -39,5 +40,6 @@ export default () => (
     <Route path='/chatroom' component={ChatRoom} />
     <Route path='/writereview' component={WriteReview} />
     <Route path='/crewsetting' component={CrewSetting} />
+    <Route path='/crewlist' component={CrewList} />
   </Router>
 )

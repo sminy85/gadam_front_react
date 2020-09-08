@@ -21,6 +21,7 @@ import Message from './component/Message'
 import ChatRoom from './component/ChatRoom'
 import CrewSetting from './component/CrewSetting'
 import WriteReview from './component/WriteReview'
+import CrewList from './component/CrewList'
 
 function App () {
   return (
@@ -46,6 +47,7 @@ function App () {
           <Route path='/chatroom'><ChatRoom /></Route>
           <Route path='/writereview'><WriteReview /></Route>
           <Route path='/crewsetting'><CrewSetting /></Route>
+          <Route path='/crewlist'><CrewList /></Route>
         </Switch>
         <Footer />
       </div>

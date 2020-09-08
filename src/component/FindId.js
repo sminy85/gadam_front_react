@@ -1,11 +1,10 @@
 import React from 'react'
 import '../css/findid.css'
-import '../css/base.css'
 import { NavLink } from 'react-router-dom'
 
 function FindId () {
   return (
-    <div className="center_body">
+    <div className="center_body_fi">
     <div className="main">
       <form action method="post">
         <div className="title">
