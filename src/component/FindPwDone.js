@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 function FindPwDone () {
   return (
-    <div className="center_body">
+    <div className="center_body6">
     <div className="main">
       <form action method="post">
         <div className="title">

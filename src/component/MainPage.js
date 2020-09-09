@@ -189,7 +189,7 @@ function NewComponent () {
                 <li>#서울</li>
               </span>
             </div>
-            <a href='/' className="joinbtn">참여하기</a>
+            <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
           </div>
           <div className="todays-crew-info">
             <li className="time"> 11:00 </li>
@@ -201,7 +201,7 @@ function NewComponent () {
                 <li>#서울</li>
               </span>
             </div>
-            <a className="joinbtn" href='/'>참여하기</a> 
+            <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
           </div>
           <div className="todays-crew-info">
             <li className="time"> 15:00 </li>
@@ -237,7 +237,7 @@ function NewComponent () {
                 <li>#대전</li>
               </span>
             </div>
-            <a className="joinbtn" href='/'>참여하기</a>
+            <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
           </div>
           <div className="todays-crew-info">
             <li className="time"> 19:00 </li>
@@ -249,7 +249,7 @@ function NewComponent () {
                 <li>#부산</li>
               </span>
             </div>
-            <a className="joinbtn" href='/'>참여하기</a>
+            <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
           </div>
           <div className="todays-crew-info">
             <li className="time"> 20:00 </li>

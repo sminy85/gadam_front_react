@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/crewlist.css'
 import '../css/base.css'
+import { NavLink } from 'react-router-dom'
 
 function CrewList () {
   return (
@@ -81,7 +82,7 @@ function CrewList () {
               <li>#서울</li>
             </span>
           </div>
-          <a href='/' className="joinbtn">참여하기</a>
+          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 11:00 </li>
@@ -93,7 +94,7 @@ function CrewList () {
               <li>#서울</li>
             </span>
           </div>
-          <a className="joinbtn" href='/'>참여하기</a>
+          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 15:00 </li>
@@ -129,7 +130,7 @@ function CrewList () {
               <li>#대전</li>
             </span>
           </div>
-          <a className="joinbtn" href='/'>참여하기</a>
+          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 19:00 </li>
@@ -141,7 +142,7 @@ function CrewList () {
               <li>#부산</li>
             </span>
           </div>
-          <a className="joinbtn" href='/'>참여하기</a>
+          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 20:00 </li>

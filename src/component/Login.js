@@ -15,7 +15,7 @@ function NewComponent3 () {
   return (
     <div className="main">
       <b><p className="logintitle">Login</p></b>
-      <form name="fo" className="loginfo" method="get">
+      <form name="fo" className="login_form" method="get">
         <div className="loginfo_id">
           <label><p id="un">Username</p><br /><input type="text" size={15} defaultValue="id"/></label>
         </div>
