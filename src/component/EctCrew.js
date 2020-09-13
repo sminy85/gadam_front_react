@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/ect_crew.css'
-import '../css/base.css'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'

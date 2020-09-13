@@ -7,17 +7,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faComment
 } from '@fortawesome/free-solid-svg-icons'
-import Modal from './Modal'
 import { NavLink } from 'react-router-dom'
-
-library.add(
-  faComment
-  // more icons go here
-)
+import Modal from '@material-ui/core/Modal'
+import { makeStyles } from '@material-ui/core/styles'
+import { Button } from '@material-ui/core'
 
 function MyPage () {
   return (
-    <div style={{ display: 'block' }}>
+    <div>
       <div className='mypage'>
         <NewComponent4 />
       </div>
@@ -25,14 +22,75 @@ function MyPage () {
   )
 }
 
-function NewComponent4 () {
-  const [show, setShow] = useState(false)
+library.add(
+  faComment
+  // more icons go here
+)
 
-  var showModal = e => {
-    setShow(!this.state.show)
+function getModalStyle () {
+  const top = 50;
+  const left = 50;
+
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+  };
+}
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    position: 'absolute',
+    width: 400,
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+  margin: {
+    marginRight: '20px',
+    marginLeft: '40px'
   }
+}));
+
+function NewComponent4 () {
+  const classes = useStyles();
+  const [modalStyle] = React.useState(getModalStyle);
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const body = (
+    <div style={modalStyle} className={classes.paper}>
+      <h2 id="simple-modal-title">일정 취소</h2>
+      <p id="simple-modal-description">
+        정말로 일정을 취소하시겠습니까?
+        취소규정 확인 필수
+      </p>
+      <div className={classes.alignCont}>
+        <Button onClick={handleClose} className={classes.margin} variant="outlined">네, 취소합니다</Button>
+        <Button onClick={handleClose} color="secondary" variant="outlined">아니요</Button>
+      </div>
+    </div>
+  );
+
   return (
     <div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        {body}
+      </Modal>
+
       <div className="headline">
         <h1 className='title-m'>MY PAGE</h1>
         <li><NavLink to='/message' id='message'><FontAwesomeIcon id='message' icon={['fa', 'comment']} size='2x' /></NavLink></li>
@@ -42,85 +100,40 @@ function NewComponent4 () {
       </div>
       <div className="preview">
         <h3 className="subtitle">나의 운동 일정</h3>
-        <div className="box-slide">
+        <ul className="box-slide">
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <a href='/' id="deletebtn" style={{flexGrow: 3}}>일정 취소</a>
+            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              일정 취소
+            </Button>
           </div>
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <a href='/' id="deletebtn" style={{flexGrow: 3}}>일정 취소</a>
+            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              일정 취소
+            </Button>
           </div>
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>안양천 러닝</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <a id="deletebtn" style={{flexGrow: 3}} href='/'>일정 취소</a>
+            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              일정 취소
+            </Button>
           </div>
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <a id="deletebtn" style={{flexGrow: 3}} href='/'>
-              <button
-                style={{borderStyle: 'none', backgroundColor: '#ffff8b'}}
-                class='toggle-button' id='centered-toggle-button'
-                onClick={function (e) {
-                  e.preventDefault()
-                  setShow(!show)
-                }}
-              >
+            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-              </button>
-            </a>
+            </Button>
           </div>
-        </div>
-        <Modal onClose={showModal} show={show}>
-          <div className="modal"> 
-            <div className="content">
-              일정 취소
-              <span className="close-button">×</span>
-            </div>
-            <div className="modal-body">
-              <p>정말로 일정을 취소하시겠습니까?</p>
-              <p className="text-secondary"><small>취소 규정 확인 필수</small></p>
-            </div>
-            <div className="modal-footer">
-              <input id="cancel" type="button" defaultValue="네,취소할래요" />
-              <input id="submit" type="submit" defaultValue="아니요!" />
-            </div>
-          </div>
-        </Modal>
-        <div>
-          <a id="show" onclick="if(hide.style.display=='none') 
-{hide.style.display='';show.innerText='▲접기'} else {hide.style.display='none';show.innerText='▶더보기'}" href='#none'>▶더보기</a>
-          <div id="hide" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <a id="deletebtn" style={{flexGrow: 3}} onclick="confirmCancle()" href='/'>일정 취소</a>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <a id="deletebtn" style={{flexGrow: 3}} onclick="confirmCancle()" href='/'>일정 취소</a>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>안양천 러닝</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <a id="deletebtn" style={{flexGrow: 3}} onclick="confirmCancle()" href='/'>일정 취소</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        </ul>
       </div>
 
       <hr />
@@ -150,38 +163,6 @@ function NewComponent4 () {
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-          </div>
-        </div>
-        <div>
-          <a id="show2" onclick="if(hide2.style.display=='none') 
-{hide2.style.display='';show2.innerText='▲접기'} else {hide2.style.display='none';show2.innerText='▶더보기'}" href='#none'>▶더보기</a>
-          <div id="hide2" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>강남 무빙센터 클라이밍</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>미아사거리역 볼링</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>관악산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -214,26 +195,6 @@ function NewComponent4 () {
             <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
           </div>
         </div>
-        <div>
-          <a id="show3" onclick="if(hide3.style.display=='none') 
-{hide3.style.display='';show3.innerText='▲접기'} else {hide3.style.display='none';show3.innerText='▶더보기'}" href="#none">▶더보기</a>
-          <div id="hide3" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>양천공원 농구</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>북한산 둘레길 걷기</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <hr />
       <div className="preview">
@@ -264,56 +225,9 @@ function NewComponent4 () {
             <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
           </div>
         </div>
-        <div>
-          <a id="show4" onclick="if(hide4.style.display=='none') 
-{hide4.style.display='';show4.innerText='▲접기'} else {hide4.style.display='none';show4.innerText='▶더보기'}" href="#none">▶더보기</a>
-          <div id="hide4" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산 </h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>강서구 탁구</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-            </div>
-            <br />
-            <div className="box-slide">
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>강서구 탁구</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )
 }
 
-export default MyPage;
+export default MyPage

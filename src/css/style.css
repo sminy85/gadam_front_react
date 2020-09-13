@@ -306,7 +306,7 @@ border-radius: 25px;
    border:none ;
   background-color:skyblue;
   color:white;
-  padding:4px;
+  padding:2px;
  border-radius:80px;
   border:2px solid white;
   display:flex;
@@ -314,7 +314,7 @@ border-radius: 25px;
   align-items:center;
 }
 .joinbtn:hover{
-border:2px solid black;
+border:2px solid skyblue;
 }
 
 .joindonebtn{
@@ -329,7 +329,7 @@ display:flex;
   border:2px solid white;
 }
 .joindonebtn:hover{
-border:2px solid black;
+border:2px solid rgba(54, 53, 53, 0.623);
 }
 
 .joinfastbtn{
@@ -338,14 +338,16 @@ border:2px solid black;
   background-color:red;
   color:white;
   padding:2px;
+  margin:3px;
  border-radius:80px;
      border:2px solid white;
   display:flex;
   justify-content:center;
   align-items:center;
+  margin-bottom:5px;
 }
 .joinfastbtn:hover{
-border:2px solid black;
+  border:2px solid red;
 }
 
 .main-paging{
@@ -450,7 +452,10 @@ input {
 input:focus{ 
   border: 1px solid #97d6eb; 
 } 
-     
+.sex_filter,.age_filter {
+  margin-right:20px;
+  
+}
 .bottom_btn {
   margin: auto;
   padding: 10px;
@@ -532,6 +537,7 @@ border:none;
   padding: 5px 10px;
   color: #999999;
   background-color: black;
+  margin-bottom:25px;
 }
 
 .bottomarea {

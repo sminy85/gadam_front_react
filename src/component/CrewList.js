@@ -7,15 +7,14 @@ function CrewList () {
   return (
     <div className='crewlist_body'>
       <section className='crewlist2'>
-        <p className='findcrew-title'><b id='hiking-t'>등산</b>크루를 찾고 계신가요?</p>
+        <p className='findcrew-title'><b id='hiking-t'>등산 </b>크루를 찾고 계신가요?</p>
         <div className='findcrew-q'>
-          <input type='text' palceholder='크루 검색' />
-          <button className='findcrew_btn'>검색</button>
+          <input type='text' />
+          <button className='findcrew_btn'>찾기</button>
         </div>
         <div className='date_q'><p className='date-q'>날짜</p>
           <p className='datepick-q'><input type='date' /></p>
         </div>
-        {/* <hr /> */}
         <div className='time-filter'>
           <ul className='time-filter-btn'>
             <li><a href='/'>전체</a></li>
@@ -82,7 +81,7 @@ function CrewList () {
               <li>#서울</li>
             </span>
           </div>
-          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
+          <NavLink to='/detailinfo' className='joinbtn'><p>참여하기</p></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 11:00 </li>
@@ -94,7 +93,7 @@ function CrewList () {
               <li>#서울</li>
             </span>
           </div>
-          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
+          <NavLink to='/detailinfo' className='joinbtn'><p>참여하기</p></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 15:00 </li>
@@ -106,7 +105,7 @@ function CrewList () {
               <li>#서울</li>
             </span>
           </div>
-          <a className="joindonebtn" href='/'>모집마감</a>
+          <p  className='joindonebtn'>모집마감</p>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 17:00 </li>
@@ -118,8 +117,7 @@ function CrewList () {
               <li>#대전</li>
             </span>
           </div>
-          <a className="joinfastbtn" href='/'>마감임박</a>
-        </div>
+          <NavLink to='/detailinfo' className='joinfastbtn'><p>마감임박</p></NavLink>        </div>
         <div className="todays-crew-info">
           <li className="time"> 18:00 </li>
           <div className="info">
@@ -130,7 +128,7 @@ function CrewList () {
               <li>#대전</li>
             </span>
           </div>
-          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
+          <NavLink to='/detailinfo' className='joinbtn'><p>참여하기</p></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 19:00 </li>
@@ -142,7 +140,7 @@ function CrewList () {
               <li>#부산</li>
             </span>
           </div>
-          <NavLink to='/detailinfo'><a href='/' className='joinbtn'>참여하기</a></NavLink>
+          <NavLink to='/detailinfo' className='joinbtn'><p>참여하기</p></NavLink>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 20:00 </li>
@@ -154,7 +152,7 @@ function CrewList () {
               <li>#부천</li>
             </span>
           </div>
-          <a className="joindonebtn" href='/'>모집마감</a>
+          <p  className='joindonebtn'>모집마감</p>
         </div>
         <div className="todays-crew-info">
           <li className="time"> 22:00 </li>
@@ -166,8 +164,7 @@ function CrewList () {
               <li>#인천</li>
             </span>
           </div>
-          <a className="joinfastbtn" href='/'>마감임박</a>
-        </div>
+          <NavLink to='/detailinfo' className='joinfastbtn'><p>마감임박</p></NavLink>        </div>
       </section>
       <div className="main-paging">
         <div className="todayscrew-paging">

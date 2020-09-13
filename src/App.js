@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Header from './component/Header'
 import Footer from './component/Footer'
@@ -24,6 +24,11 @@ import WriteReview from './component/WriteReview'
 import CrewList from './component/CrewList'
 
 function App () {
+  const [details, setDetails] = useState(
+    {
+      crewname: '도봉산 도봉산'
+    })
+
   return (
     <BrowserRouter>
       <div className='App'>
@@ -32,7 +37,7 @@ function App () {
           <Route exact path='/'><MainPage /></Route>
           <Route path='/findcrew'><FindCrew /></Route>
           <Route path='/makecrew'><MakeCrew /></Route>
-          <Route path='/detailinfo'><DetailInfo /></Route>
+          <Route path='/detailinfo'><DetailInfo crewname={details.crewname} /></Route>
           <Route path='/findidpw'><FindIdPw /></Route>
           <Route path='/join'><Join /></Route>
           <Route path='/findid'><FindId /></Route>
