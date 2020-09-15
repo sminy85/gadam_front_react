@@ -17,7 +17,7 @@ function EctCrew () {
       <div className='center_body6'>
         <section className="crewlist">
           <div className="addsports-top">
-            <h1 className="findcrew-title">더 많은 크루를 찾고 계신가요? </h1>
+            <h1 className="findcrew-title2">더 많은 크루를 찾고 계신가요? </h1>
           </div>
           <div className="findcrew-m">
             <input className='findcrew_input' type='text'/>

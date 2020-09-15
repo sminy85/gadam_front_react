@@ -102,36 +102,44 @@ function NewComponent4 () {
         <h3 className="subtitle">나의 운동 일정</h3>
         <ul className="box-slide">
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place" >도봉산 입구 매점</li>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button>
+              </Button>
+            </li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place" >도봉산 입구 매점</li>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button>
+              </Button>
+            </li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>안양천 러닝</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <h3 id="crewtitle" >안양천 러닝</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button>
+              </Button>
+            </li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-            <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button>
+              </Button>
+            </li>
           </div>
         </ul>
       </div>
@@ -141,27 +149,27 @@ function NewComponent4 () {
         <h3 className="subtitle">지난 크루 리뷰</h3>
         <div className="box-slide">
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>강남 무빙센터 클라이밍</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >강남 무빙센터 클라이밍</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>미아사거리역 볼링</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >미아사거리역 볼링</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >한강 러닝</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>관악산 등산</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >관악산 등산</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
           </div>
         </div>
@@ -171,27 +179,27 @@ function NewComponent4 () {
         <h3 className="subtitle">내가 개설한 크루</h3>
         <div className="box-slide">
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>양천공원 농구</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >양천공원 농구</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>북한산 둘레길 걷기</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >북한산 둘레길 걷기</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>덕성여대 사이클</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >덕성여대 사이클</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
           </div>
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
           </div>
         </div>
@@ -201,27 +209,27 @@ function NewComponent4 () {
         <h3 className="subtitle">내가 찜한 크루</h3>
         <div className="box-slide">
           <div className="boxx">
-            <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산 </h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >도봉구 도봉산 등산 </h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
           </div>
           <div className='boxx'>
-            <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >한강 러닝</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
           </div>
           <div className='boxx'>
-            <h3 id="crewtitle" style={{flexGrow: 3}}>강서구 탁구</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >강서구 탁구</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
           </div>
           <div className='boxx'>
-            <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-            <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-            <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
+            <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
+            <li id="date-time">2020년 8월 7일 18:00</li>
+            <li id="place">도봉산 입구 매점</li>
             <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
           </div>
         </div>

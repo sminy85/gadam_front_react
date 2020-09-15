@@ -3,11 +3,14 @@
     background-color: white;
     margin: auto;
     width: 60%;
+    height:100%;
+    padding-bottom: 60px;
   }
 
   .title-m {
     color: black;
     margin: 10px;
+    margin-right:20px;
   }
   
   .headline {
@@ -16,6 +19,7 @@
     align-items: center;
     padding: 20px;
     margin: 20px;
+    margin-bottom: 0px;
     width: 100%;
   }
   
@@ -41,6 +45,7 @@
     padding:10px;
     border-radius:10px;
     color:black;
+    margin-right:20px;
   }
   
   #idfix:hover{
@@ -50,7 +55,10 @@
   }
   .box-slide{
     display:flex;
+    align-items: center;
+    justify-items: center;
     margin-bottom:15px;
+    width: 100%;
   }
   .boxx{
     box-shadow: 3px 3px 3px 3px #aaaaaa;
@@ -58,8 +66,8 @@
     padding-top:0px;
     border-radius:10px;
     margin:10px;
-    width: 220px;
-    height: 150px;
+    width: 100%;
+    height: 180px;
     flex-direction: column;
     display: flex;
     align-items: stretch;
@@ -75,42 +83,65 @@
      color:rgb(71, 71, 71);
   }
   .subtitle{
-    margin-bottom:10px;
+    margin-bottom:20px;
     text-align: left;
+    font-size: 20px;
   }
   #crewtitle{
     font-size:18px;
-    margin-top:10px;
-    margin-bottom:0px;
+    margin-top:15px;
+    margin-bottom:10px;
+    flex: 1;
   }
   #date-time{
     font-size:12px;
     margin-bottom:2px;
    margin-top:8px;
+   flex: 1;
   }
   #place{
     font-size:12px;
     margin-top:2px; 
     margin-bottom:6px;
+    flex: 1;
   }
   
-  #deletebtn,#reviewbtn,#setting,#detaillbtn{
-    outline: 1px;
-    font-size:12px;
-    padding: 0;
-    margin: 0;
+  #reviewbtn,#setting,#detaillbtn{
+    font-size:13px;
     border-radius: 5px;
-    background-color:#ffff8b;
-    color:black;
     align-items: center;
     display: flex;
     justify-content: center;
-  height:40px;
+    padding-top:12px;
+    padding-bottom: 9px;
     width: 100%;
+    flex: 1;
+  }
+
+  #reviewbtn{
+    background-color:#ffff8b;
+    color:black;
+  }
+  #setting{
+    background-color:#8bd1ff;
+    color:black;
+  }
+  #detaillbtn{
+    background-color:#b4b1b1;
+    color:black;
+  }
+  #deletebtn{
+    font-size:13px;
+    border-radius: 5px;
+    background-color:#ec8f8ffb;
+    color:black;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top:10px;
   }
   
   #deletebtn:hover{
-    background-color: #c9bc1f;
+    background-color: #d17474fb;
   }
   
   #reviewbtn:hover{
@@ -118,11 +149,11 @@
   }
   
   #setting:hover{
-    background-color: #c9bc1f;
+    background-color: #5db1e9;
   }
   
   #detaillbtn:hover{
-    background-color: #c9bc1f;
+    background-color: #b4b1b1;
   }
   
   .far fa-comments {
@@ -146,3 +177,4 @@
   .cancle_modal_btn {
     align-content: space-between;
   }
+  

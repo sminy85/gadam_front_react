@@ -5,6 +5,7 @@ body {
 .want-title{
   text-align: left;
   margin-left:20%;
+  width: 300px;
   padding: 30px;
   font-size:30px;
 }
@@ -20,19 +21,22 @@ body {
 #addsports{
   height:40px;
   font-size:25px;
+  background-color: white;
+  border:4px solid gray;
+  padding:5px;
+  margin-bottom: 70px;
 }
 
 #addsportsbtn{
   height:42px;
   border-radius:25px;
-  border:2px solid gray;
+  border:3px solid gray;
   background-color:white;
   margin-left:5px;
   width:100px;
 }
 #addsportsbtn:hover{
- background-color:gray;
-  color:white;
+  background-color:#ffee58;
 }
 
 a {
