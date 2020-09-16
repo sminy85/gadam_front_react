@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../css/mypage.css'
-import '../css/base.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import the library
 import { library } from '@fortawesome/fontawesome-svg-core'

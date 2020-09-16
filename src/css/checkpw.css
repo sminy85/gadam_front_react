@@ -1,25 +1,27 @@
-.checkpw{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  padding-top:10px;
-}
-
 .check{
   padding: 10px;
   margin: auto;
   font-size:25px;
+  padding-top:60px;
+  margin-left:50px;
+  text-align: left;
+  margin-bottom: 120px;
+  border-bottom: 3px solid #47cba3;
+  width:200px;
 }
 
 #yes{
-   color:white;
+  color:black;
+  border:3px solid #47cba3;
+  background-color: white;
+  padding:7px 12px 7px 12px;
+  border-radius: 20px;
 }
 #pass-c{
   height:30px;
   margin-right:5px;
-}
-
-#pass-c {
+  background-color: white;
+  margin-left:28%;
   width: 40%;
   height: 28px;
 	border-radius : 5px;
@@ -28,13 +30,10 @@
 }
 
 .check_btn{
-  height: 28px;
-  border :1px solid gray;
-  padding:2px;
-  border-radius:5px;
-  background-color:rgb(194, 189, 189);
-  color:white;
+  margin-top: 100px;
 }
 
-
+.checkpw {
+  display: flex;
+}
 
