@@ -105,7 +105,7 @@ function NewComponent4 () {
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place" >도봉산 입구 매점</li>
             <li>
-              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              <Button onClick={handleOpen} id='deletebtn'>
               일정 취소
               </Button>
             </li>
@@ -115,7 +115,7 @@ function NewComponent4 () {
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place" >도봉산 입구 매점</li>
             <li>
-              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              <Button onClick={handleOpen} id='deletebtn'>
               일정 취소
               </Button>
             </li>
@@ -125,7 +125,7 @@ function NewComponent4 () {
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place">도봉산 입구 매점</li>
             <li>
-              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              <Button onClick={handleOpen} id='deletebtn'>
               일정 취소
               </Button>
             </li>
@@ -135,7 +135,7 @@ function NewComponent4 () {
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place">도봉산 입구 매점</li>
             <li>
-              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+              <Button onClick={handleOpen} id='deletebtn'>
               일정 취소
               </Button>
             </li>
