@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
-import '../css/base.css'
-import Modal from './Modal'
+import Modal from '@material-ui/core/Modal'
+import { makeStyles } from '@material-ui/core/styles'
+import { Button } from '@material-ui/core'
 import { NavLink } from 'react-router-dom'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -26,12 +27,101 @@ function MainPage () {
   )
 }
 
-function NewComponent () {
-  const [show, setShow] = useState(false)
+function getModalStyle () {
+  const top = 50;
+  const left = 50;
 
-  var showModal = e => {
-    setShow(!this.state.show)
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
   }
+}
+
+const useStylesFilter = makeStyles((theme) => ({
+  paper: {
+    position: 'absolute',
+    width: 500,
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #b5ffff',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+  margin: {
+    marginRight: '20px',
+    marginLeft: '25px'
+  },
+  title: {
+    borderBottom: '2px solid #47cba3',
+    paddingBottom: '10px'
+  },
+  alignCont: {
+    paddingTop: '10px'
+  }
+}))
+
+function NewComponent () {
+  const classes = useStylesFilter();
+  const [modalStyle] = React.useState(getModalStyle);
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false);
+  }
+
+  const body = (
+    <div style={modalStyle} className={classes.paper}>
+      <h2 id="simple-modal-title" className={classes.title}>내 크루 찾기</h2>
+      <p id="simple-modal-description">
+        <div className='content99'>
+          <div className="filter_item">
+            <ul className="list">
+              <h4 className="sex_filter">성별</h4>
+              <li>
+                <input type="checkbox" v-model="checkedSex" className="filterCheck grey" id="sex_m" defaultValue={1} />
+                <label htmlFor="sex_m" className="checkLabel">남성</label>
+              </li>
+              <li>
+                <input type="checkbox" v-model="checkedSex" className="filterCheck grey" id="sex_w" defaultValue={-1} />
+                <label htmlFor="sex_w" className="checkLabel">여성</label>
+              </li>
+              <li>
+                <input type="checkbox" v-model="checkedSex" className="filterCheck grey" id="sex_u" defaultValue={0} />
+                <label htmlFor="sex_u" className="checkLabel">무관</label>
+              </li>
+            </ul>
+            <ul className="list">
+              <h4 className="age_filter">나이</h4>
+              <li>
+                <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={4} />
+                <label htmlFor="type_match" className="checkLabel">10대</label>
+              </li>
+              <li>
+                <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={5} />
+                <label htmlFor="type_cup" className="checkLabel">20대</label>
+              </li>
+              <li>
+                <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={6} />
+                <label htmlFor="type_cup" className="checkLabel">30대</label>
+              </li>
+              <li>
+                <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={7} />
+                <label htmlFor="type_cup" className="checkLabel">40대</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </p>
+      <div className={classes.alignCont}>
+        <Button onClick={handleClose} id='filter_cancle' className={classes.margin} color="secondary">취소</Button>
+        <Button onClick={handleClose} id='filter_ok'>적용하기</Button>
+      </div>
+    </div>
+  )
 
   return (
     <div>
@@ -64,65 +154,19 @@ function NewComponent () {
             {/* <span>오늘의 크루</span> */}
             <b><span>TODAY'S CREW</span></b>
             <span className="filter_btn" id="filter_btn">
-              <button
-                class='toggle-button'
-                id='centered-toggle-button'
-                onClick={function (e) {
-                  e.preventDefault()
-                  setShow(!show)
-                }}>
+              <Button onClick={handleOpen}>
                 <FontAwesome name='filter' size='3x' />
-              </button>
+              </Button>
             </span>
           </div>
 
-          <Modal onClose={showModal} show={show}>
-            <div className="modal"> 
-              <div className='content99'> 
-              <span className="close-button" onClose={showModal}>×</span>
-               <h4 className="con99">내 크루 찾기</h4> 
-               
-                <div className="filter_item">
-                  <ul className="list">
-                    <h4 className="sex_filter">성별</h4>
-                    <li>
-                      <input type="checkbox" v-model="checkedSex" className="filterCheck grey" id="sex_m" defaultValue={1} />
-                      <label htmlFor="sex_m" className="checkLabel">남성</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" v-model="checkedSex" className="filterCheck grey" id="sex_w" defaultValue={-1} />
-                      <label htmlFor="sex_w" className="checkLabel">여성</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" v-model="checkedSex" className="filterCheck grey" id="sex_u" defaultValue={0} />
-                      <label htmlFor="sex_u" className="checkLabel">무관</label>
-                    </li>
-                  </ul>
-                  <ul className="list">
-                    <h4 className="age_filter">나이</h4>
-                    <li>
-                      <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={4} />
-                      <label htmlFor="type_match" className="checkLabel">10대</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={5} />
-                      <label htmlFor="type_cup" className="checkLabel">20대</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={6} />
-                      <label htmlFor="type_cup" className="checkLabel">30대</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" v-model="checkedAge" className="filterCheck grey" id="type_match" defaultValue={7} />
-                      <label htmlFor="type_cup" className="checkLabel">40대</label>
-                    </li>
-
-                  </ul>
-                </div>
-                <input type="button" id="cancel" defaultValue="취소" />
-                <input type="submit" id="submit" defaultValue="적용하기" />
-              </div>
-            </div>
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+          >
+            {body}
           </Modal>
           <div className='time-filter'>
             <ul className='time-filter-btn'>

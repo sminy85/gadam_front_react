@@ -7,9 +7,9 @@ function FixInfo () {
   return (
     <div className="center_body6">
       <div className="main">
+      <h2 id="fixinfo">회원정보 수정</h2><br />
         <form action method="post">
-          <h2 id="fixinfo">회원정보 수정</h2>
-          <table>
+                 <table>
             <tbody><tr><td>이름</td>
                 <td><input type="text" id="name" name="name" /></td></tr>
               <tr><td>아이디</td>
@@ -38,11 +38,11 @@ function FixInfo () {
                 </td></tr>
               <tr><td>전화번호</td>
                 <td><input type="text" size={11} id="num" placeholder="ex)01012341234" name="num" /></td></tr>
-              <tr><td colSpan={2} className="fixinfo_btn">
+            </tbody></table>
+            <div className="fixinfo_btn">
                   <NavLink to='/mypage' className="yes"><input type="submit" value="수정하기" /></NavLink>
                   <NavLink to='/mypage' className="no" ><input type="submit" value="취소하기" /></NavLink>
-                </td></tr>
-            </tbody></table>
+              </div>
         </form>
       </div>
     </div>

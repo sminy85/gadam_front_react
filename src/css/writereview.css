@@ -1,13 +1,16 @@
 input:hover, textarea:hover {
-background : aliceblue;
+background : beige;
+
 }
 
 .review_submit {
+    margin-left:82%;
 width: 100px;
 height: 30px;
 background-color:white;
 border: 3px solid #ffee58;
 border-radius: 5px;
+margin-top:50px;
 }
 
 .review_submit:hover{
@@ -21,21 +24,28 @@ border-radius: 5px;
 .crew_name {
 display : block; 
 padding : 5px;
+font-size:20px;
 }
 
 .writereview {
 margin: auto;
-width: 50%;
+width: 60%;
 background-color: white;
 padding: 10px;
-height: 80%;
+height: 100vh;
     margin-top:20px;
 }
 
 #review {
-margin: 10px;
-border-bottom: 5px solid #7fffd4;
-width: 105px;
+border-bottom: 3px solid #7fffd4;
+padding: 10px;
+margin: auto;
+font-size:32px;
+padding-top:60px;
+margin-left:50px;
+text-align: left;
+margin-bottom: 50px;
+width:90%;
 }
 
 hr {
@@ -45,19 +55,28 @@ margin-bottom: 30px;
 
 .ratingform {
 margin: 10px;
-}
+width:90%;
 
+}
+.reviewpage{
+    margin-left:50px;
+}
 .reviewTextArea {
-margin: 10px;
+padding: 10px;
+font-size: 15px;
+width:80%;
+border:3px solid gray;
+margin-left:70px;
 }
 
 .rating {
 display: flex;
 width: 100%;
-justify-content: flex-end;
+justify-content: center;
 overflow: hidden;
 flex-direction: row-reverse;
 position: relative;
+margin-bottom:40px;
 }
 
 

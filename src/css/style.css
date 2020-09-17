@@ -547,3 +547,8 @@ border:none;
   padding-left: 90%;
   width: 100%;
 }
+
+#filter_cancle, #filter_ok {
+  width: 40%;
+  border-radius: 15px;
+}

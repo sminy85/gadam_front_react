@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/base.css'
 import { NavLink, Switch, Route, Router } from 'react-router-dom'
 import FindCrew from './FindCrew'
 import MainPage from './MainPage'

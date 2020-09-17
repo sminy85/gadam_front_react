@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/login.css'
-import '../css/base.css'
 import { NavLink } from 'react-router-dom'
 
 function Login () {
@@ -17,11 +16,12 @@ function NewComponent3 () {
       <b><p className="logintitle">Login</p></b>
       <form name="fo" className="login_form" method="get">
         <div className="loginfo_id">
-          <label><p id="un">Username</p><br /><input type="text" size={15} defaultValue="id"/></label>
+          <label><b><p id="un">Username</p></b></label>
+          <input type="text" size={20}/>
         </div>
         <div className="loginfo_pw">
-          <label htmlFor="pass"><p id="pw" >Password</p></label><br />
-          <input id="pass" type="password" size={15} defaultValue />
+          <label htmlFor="pass"><b><p id="pw" >Password</p></b></label>
+          <input id="pass" type="password" size={20} defaultValue />
         </div>
         <div className="login_btn">
           <input type="submit" Value="LOG IN" />

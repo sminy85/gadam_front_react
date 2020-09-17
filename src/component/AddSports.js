@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/addsports.css'
-import '../css/base.css'
 
 function AddSports () {
   return (

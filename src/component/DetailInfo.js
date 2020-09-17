@@ -5,7 +5,7 @@ import 'react-slideshow-image/dist/styles.css'
 import slideImage4 from './images/blog-4.jpg'
 import slideImage5 from './images/blog-5.jpg'
 import slideImage6 from './images/blog-6.jpg'
-
+import kingpic from './images/person1.jpg'
 function DetailInfo ({ crewname }) {
   return (
     <div class="detailinfo">
@@ -25,18 +25,18 @@ function DetailInfo ({ crewname }) {
       <div className="crew_info">
         <div className="crew-box">
           <div className="crew_title">
-            <h2 title="크루명"><span>{crewname}</span> 등산 크루에 오신걸 환영합니다.</h2>
+            <h2 title="크루명"><span>{crewname}</span> 등산 크루에 오신걸 환영합니다</h2>
             <br />
           </div>
           <div className="choose">
-            <div className="radio-wrap">
-              <input id="pick_u" type="radio" defaultValue="like" />
-              <label className="checkLabel" htmlFor="pick_u">찜하기</label>
+            <div className="like_btn">
+       <p className="like">Like</p>
             </div>
             <div className="joinyes">
-              <input id="joiny" type="submit" defaultValue="참여하기" />
+              <input id="joiny" type="submit" value="참가하기" />
             </div>
           </div>
+
         </div>
         <br />
         <div className="date-detail">
@@ -68,7 +68,7 @@ function DetailInfo ({ crewname }) {
           <br />
           <div className="crew_captin">
             <div className="crew_captin_contact">
-              <img width={200} height={200} src="images/person1.jpg" />
+              <img width={200} height={200} src={kingpic} alt='kingpic' />
               <button className="contact_btn" onclick="openForm()">메세지 보내기</button>
             </div>
             <h5 className="content2"> 안녕하세유 크루장 덕새임니당어쩌구저쩌궁~~</h5>

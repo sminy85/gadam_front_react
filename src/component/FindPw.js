@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/findid.css'
-import '../css/base.css'
 import { NavLink } from 'react-router-dom'
 
 function FindPw () {

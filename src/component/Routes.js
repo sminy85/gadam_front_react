@@ -41,5 +41,6 @@ export default () => (
     <Route path='/writereview' component={WriteReview} />
     <Route path='/crewsetting' component={CrewSetting} />
     <Route path='/crewlist' component={CrewList} />
+    <Route path='/login' component={join2} />
   </Router>
 )

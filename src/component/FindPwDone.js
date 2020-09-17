@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/find_idpw_done.css'
-import '../css/base.css'
 import { NavLink } from 'react-router-dom'
 
 function FindPwDone () {

@@ -4,7 +4,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 60%;
-height: 100%;
+height: 100vh;
 padding-top:30px;
 margin-bottom:30px;
 margin-top:20px;
@@ -19,7 +19,7 @@ justify-content: center;
 padding:10px;
 padding-bottom:15px;
 width:30%;
-margin-bottom:40px;
+margin-bottom:60px;
 margin-top:40px;
 margin-left: auto;
 margin-right: auto;
@@ -27,21 +27,22 @@ margin-right: auto;
 
 #un, #pw {
     text-align: left;
+   padding:10px;
 }
 
 .loginsubtitle {
 text-align: center;
 margin-bottom: 10px;
 font-size:25px;
-
+padding-bottom: 20px;;
 }
 
 #un,#pw{
-margin:0px;
+margin:10px;
 }
 
 .loginfo_id,.loginfo_pw{
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 .login_form {
@@ -62,14 +63,15 @@ margin: 10px auto;
 
 input[type=text] {
     width: 100%;
-height: 28px;
+background-color: white;
 border : 2px solid gray;
     border-radius : 5px;
 }
 
 input[type=password] {
     width: 100%;
-height: 28px;
+    height:30px;
+    background-color: white;
     border-radius : 5px;
     border : 2px solid gray;
 }
@@ -117,11 +119,11 @@ border: none;
     align-items: center;
     justify-content: center;
     margin-bottom:20px;
-    width:60%;
+    padding-top:30px;
 }
 #notyet{
     font-size:15px;
-    margin-right:10px;
+    
 }
 #go_to_join {
     font-size:13px;
@@ -132,4 +134,5 @@ border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }

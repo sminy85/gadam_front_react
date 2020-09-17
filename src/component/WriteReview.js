@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/base.css'
 import '../css/writereview.css'
 import { NavLink } from 'react-router-dom'
 
@@ -7,7 +6,7 @@ function WriteReview () {
   return (
     <div className='writereview'>
       <h1 id='review'>REVIEW</h1>
-      <hr />
+    <div className="reviewpage">
       <form className='ratingform'>
         <label>
           <div className='crew_name'><h3>도봉구 도봉산 산악회</h3></div>
@@ -34,7 +33,7 @@ function WriteReview () {
           <li className='review_submit'><NavLink to='/mypage'>작성완료</NavLink></li>
         </label>
       </form>
-    </div>
+    </div></div>
   )
 }
 export default WriteReview
